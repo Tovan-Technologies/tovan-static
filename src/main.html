@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <title>Tovan Technologies | Spark it</title>
+
+    <meta name="description"
+          content="Tovan Technologies builds AI-powered solutions, software platforms, and digital products that unlock opportunities, simplify complexity, and empower future innovators.">
+
+    <meta name="keywords"
+          content="Tovan Technologies, AI solutions South Africa, software development,katcode, nova, educational technology, katcode, katnova, digital innovation, artificial intelligence, learning platform">
+
+    <meta name="author" content="Tovan Technologies">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+
+    <link rel="canonical" href="https://tovantech.co.za/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tovantech.co.za/">
+    <meta property="og:title" content="Tovan Technologies | Software Development & Digital Innovation">
+    <meta property="og:description" content="Building intelligent software systems, AI solutions, and digital platforms that unlock human potential.">
+    <meta property="og:image" content=https://tovantech.co.za/images/full-logo.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tovan Technologies | Software Development & Digital Innovation">
+    <meta name="twitter:description" content="Building intelligent software systems, AI solutions, and digital platforms that unlock youth potential.">
+    <meta name="twitter:image" content="https://tovantech.co.za/images/full-logo.png">
+
+    <meta name="theme-color" content="#000000">
+
+
+
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Tovan Technologies",
+            "url": "https://tovantech.co.za",
+            "logo": "https://tovantech.co.za/images/img.png",
+            "description": "Tovan Technologies builds intelligent software systems, and digital platforms.",
+            "foundingLocation": {
+                "@type": "Place",
+                "name": "Bizana, Eastern Cape, South Africa"
+            },
+            "sameAs": [
+                "https://www.linkedin.com/company/tovan-technologies"
+            ],
+            "makesOffer": [
+                {
+                    "@type": "SoftwareApplication",
+                    "name": "katcode"
+                },
+                {
+                    "@type": "SoftwareApplication",
+                    "name": "katnova"
+                }
+            ]
+        }
+    </script>
+
+
+
+    <link href="./main.css" rel="stylesheet"/>
+    <link href="./style.css" rel="stylesheet"/>
+    <link href="./images/logo.png" type="image/png" rel="icon">
+</head>
+
+<body class="bg-zinc-950 text-zinc-300 antialiased selection:bg-white">
+
+<!-- Navigation -->
+<nav  class=" backdrop-blur-lg sticky top-0 z-50">
+    <div class="flex items-center justify-between px-8 py-5">
+
+        <a href="#home" class="flex-shrink-0 focus:outline-none">
+            <img src="./images/tvnw.png" alt="Tovan Logo" class="h-8 w-auto" />
+        </a>
+
+        <div class="hidden md:flex items-center space-x-8 px-5 py-2.5 text-sm font-semibold text-zinc-200 ">
+            <a href="#home" class=" hover:text-white transition-colors duration-200 tracking-wide">Home</a>
+            <a href="#products"  class="  hover:text-white transition-colors duration-200 tracking-wide">Our Products</a>
+            <a href="#about" class=" hover:text-white transition-colors duration-200 tracking-wide">About</a>
+            <a href="#contact" class="hover:bg-zinc-200 rounded-md transition-colors duration-200">
+                Contact Us
+            </a>
+        </div>
+
+        <button id="mobile-menu-btn" class="md:hidden relative w-6 h-6 focus:outline-none">
+            <span id="line-1" class="absolute block w-6 h-0.5 bg-zinc-200 rounded transition-all duration-300 ease-in-out top-1"></span>
+            <span id="line-2" class="absolute block w-6 h-0.5 bg-zinc-200 rounded transition-all duration-300 ease-in-out top-2.5"></span>
+            <span id="line-3" class="absolute block w-6 h-0.5 bg-zinc-200 rounded transition-all duration-300 ease-in-out top-4"></span>
+        </button>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden backdrop-blur-lg bg-zinc-200 border-t border-zinc-800 absolute w-full">
+        <div class="flex flex-col px-8 py-4 space-y-4">
+            <a href="#home" class="text-base font-medium text-zinc-950 hover:text-white">Home</a>
+            <a href="#products"  class="text-base font-medium text-zinc-950 hover:text-white">Our Products</a>
+            <a href="#about" class="text-base font-medium text-zinc-950 hover:text-white">About</a>
+            <a href="#contact" class="text-base font-medium text-zinc-950 ">Contact Us</a>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            const l1 = document.getElementById('line-1');
+            const l2 = document.getElementById('line-2');
+            const l3 = document.getElementById('line-3');
+
+            // Extract the animation logic into a reusable function
+            function toggleMenu() {
+                menu.classList.toggle('hidden');
+                l1.classList.toggle('top-1');
+                l1.classList.toggle('top-2.5');
+                l1.classList.toggle('rotate-45');
+                l2.classList.toggle('opacity-0');
+                l3.classList.toggle('top-4');
+                l3.classList.toggle('top-2.5');
+                l3.classList.toggle('-rotate-45');
+            }
+
+            // 1. Toggle when the hamburger button is clicked
+            btn.addEventListener('click', toggleMenu);
+
+            // 2. Automatically close the menu when ANY mobile link is clicked
+            const mobileLinks = menu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', toggleMenu);
+            });
+        });
+    </script>
+</nav>
+
+<!-- Hero -->
+<section id="home" class="relative min-h-screen flex items-center overflow-hidden">
+
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.08),transparent_60%)]"></div>
+
+    <div class="flex flex-col items-center relative max-w-7xl mx-auto px-8 pt-32 pb-24 text-center">
+
+        <p class="text-sm uppercase tracking-[0.35em] text-zinc-500 mb-6">
+            Building technologies that empower people.
+        </p>
+        <img src="./images/spark.svg"
+             alt="spark"
+             class="spark-animation  h-10 w-auto"
+        />
+        <h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold text-white tracking-tight mb-8">
+            Sparking Potential Through Technology
+
+        </h1>
+
+        <p class="max-w-3xl mx-auto text-lg md:text-xl text-zinc-400 leading-relaxed mb-12">
+            Tovan Technologies creates intelligent software systems, AI solutions, and digital platforms that unlock opportunities, simplify complexity, and drive meaningful impact.
+        </p>
+
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+
+            <a href="#products"
+               class="px-8 py-4 bg-white text-zinc-950 font-semibold rounded-lg hover:bg-zinc-200 transition-colors">
+                Explore Our Products
+            </a>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Vision -->
+<section id ="about" class="py-28 border-t border-zinc-800 ">
+
+    <div class="max-w-5xl mx-auto px-8 text-center">
+
+        <p class="text-sm uppercase tracking-[0.3em] text-zinc-500 mb-4">
+            Our Vision
+        </p>
+
+        <h2 class="text-4xl md:text-5xl text-white mb-8">
+            Unlocking potential through technology.
+        </h2>
+
+        <p class="max-w-3xl mx-auto text-zinc-400 leading-loose mb-14">
+            We believe technology should do more than solve problems—it should create opportunities, empower people, and unlock potential.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- Products -->
+<section id="products" class="py-28 border-t border-zinc-800">
+
+    <div class="max-w-7xl mx-auto px-8">
+
+        <div class="text-center mb-16">
+
+            <p class="text-sm uppercase tracking-[0.3em] text-zinc-500 mb-4">
+                Our Ecosystem
+            </p>
+
+            <h2 class="text-4xl md:text-5xl text-white">
+                Technology built to unlock human potential.
+            </h2>
+
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+
+            <!-- katcode -->
+            <article class="flex flex-col items-center text-center border  border-zinc-600 rounded-2xl p-8 hover:border-zinc-300 transition-colors">
+
+                <span class="text-xs uppercase tracking-[0.2em] text-zinc-500">
+                    Tovan Tech Academy
+                </span>
+
+                <h3 class="flex flex-col items-center gap-3 text-2xl font-semibold text-white mt-6 mb-4">
+
+                    <img src="./images/katcode-logo.png"
+                         alt="katcode logo"
+                         class="h-10 w-auto"/>
+
+                    <span class="lowercase">katcode</span>
+
+                </h3>
+
+                <p class="text-zinc-400 leading-relaxed mb-4">
+                    Helping aspiring developers learn through practical projects, guided experiences, and real-world skills.
+                </p>
+
+                <p class="text-xs font-medium text-blue-400 mb-6 px-3 py-1 bg-blue-900/20 rounded-full border border-blue-800/30">
+                    Currently, in development. Join the waitlist for early access.
+                </p>
+
+                <a href="https://katcode.co.za"
+                   target="_blank"
+                   class="mt-auto px-5 py-2.5 text-sm font-semibold text-zinc-950 bg-white hover:bg-zinc-200 rounded-md transition-colors duration-200">
+                    Join Waitlist
+                </a>
+
+            </article>
+
+            <!-- katnova -->
+            <article class="flex flex-col items-center text-center border border-zinc-600  rounded-2xl p-8 hover:border-zinc-300 transition-colors">
+
+                <span class="text-xs uppercase tracking-[0.2em] text-zinc-500">
+                    Artificial Intelligence
+                </span>
+
+                <h3 class="flex flex-col items-center gap-3 text-2xl font-semibold text-white mt-6 mb-4">
+
+                    <img src="./images/katnova-logo.png"
+                         alt="katnova logo"
+                         class="h-10 w-auto"/>
+
+                    <span class="lowercase">katnova</span>
+
+                </h3>
+
+                <p class="text-zinc-400 leading-relaxed mb-4">
+                    An AI-powered learning assistant delivering personalized guidance, intelligent support, and accessible knowledge.
+                </p>
+
+                <p class="text-xs font-medium text-blue-400 mb-6 px-3 py-1 bg-blue-900/20 rounded-full border border-blue-800/30">
+                    Available exclusively through katcode.
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Footer -->
+<footer id = "contact" class="border-t border-zinc-900 bg-black py-20">
+
+    <div class="max-w-4xl mx-auto px-8 text-center">
+
+        <h2 class="text-3xl text-white mb-4">
+            Let's spark potential together.
+        </h2>
+        <a href="mailto:info@tovantech.co.za"
+           class="text-zinc-300 hover:text-white transition-colors">
+            info@tovantech.co.za
+        </a>
+
+        <p class="text-zinc-500 mb-8">
+            Bizana, Eastern Cape, South Africa.
+        </p>
+
+
+
+        <p class="mt-12 text-xs uppercase tracking-[0.2em] text-zinc-700">
+            © 2026 Tovan Technologies (Pty) Ltd. All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
