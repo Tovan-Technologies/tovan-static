@@ -83,7 +83,9 @@
 
 <body class="bg-zinc-950 text-zinc-300 antialiased selection:bg-white">
 
-<!-- Navigation -->
+
+
+
 <nav  class=" backdrop-blur-lg sticky top-0 z-50">
     <div class="flex items-center justify-between px-8 py-5">
 
@@ -95,9 +97,7 @@
             <a href="#home" class=" hover:text-white transition-colors duration-200 tracking-wide">Home</a>
             <a href="#products"  class="  hover:text-white transition-colors duration-200 tracking-wide">Our Products</a>
             <a href="#about" class=" hover:text-white transition-colors duration-200 tracking-wide">About</a>
-            <a href="#contact" class="hover:bg-zinc-200 rounded-md transition-colors duration-200">
-                Contact Us
-            </a>
+            <a href="#contact" class="hover:text-white transition-colors duration-200 tracking-wide">Contact Us</a>
         </div>
 
         <button id="mobile-menu-btn" class="md:hidden relative w-6 h-6 focus:outline-none">
@@ -105,6 +105,7 @@
             <span id="line-2" class="absolute block w-6 h-0.5 bg-zinc-200 rounded transition-all duration-300 ease-in-out top-2.5"></span>
             <span id="line-3" class="absolute block w-6 h-0.5 bg-zinc-200 rounded transition-all duration-300 ease-in-out top-4"></span>
         </button>
+        
     </div>
 
     <div id="mobile-menu" class="hidden md:hidden backdrop-blur-lg bg-zinc-200 border-t border-zinc-800 absolute w-full">
@@ -124,7 +125,7 @@
             const l2 = document.getElementById('line-2');
             const l3 = document.getElementById('line-3');
 
-            // Extract the animation logic into a reusable function
+            
             function toggleMenu() {
                 menu.classList.toggle('hidden');
                 l1.classList.toggle('top-1');
@@ -136,10 +137,10 @@
                 l3.classList.toggle('-rotate-45');
             }
 
-            // 1. Toggle when the hamburger button is clicked
+            // Toggle when the hamburger button is clicked
             btn.addEventListener('click', toggleMenu);
 
-            // 2. Automatically close the menu when ANY mobile link is clicked
+            // Automatically close the menu when ANY mobile link is clicked
             const mobileLinks = menu.querySelectorAll('a');
             mobileLinks.forEach(link => {
                 link.addEventListener('click', toggleMenu);
@@ -148,7 +149,11 @@
     </script>
 </nav>
 
-<!-- Hero -->
+
+
+
+
+
 <section id="home" class="relative min-h-screen flex items-center overflow-hidden">
 
     <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.08),transparent_60%)]"></div>
@@ -185,7 +190,10 @@
 
 </section>
 
-<!-- Vision -->
+
+
+
+
 <section id ="about" class="py-28 border-t border-zinc-800 ">
 
     <div class="max-w-5xl mx-auto px-8 text-center">
@@ -206,7 +214,12 @@
 
 </section>
 
-<!-- Products -->
+
+
+
+
+
+
 <section id="products" class="py-28 border-t border-zinc-800">
 
     <div class="max-w-7xl mx-auto px-8">
